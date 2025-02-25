@@ -1,0 +1,30 @@
+---
+import { Image } from "astro:assets"
+import Profile from "@/assets/profile.jpg"
+---
+
+<a transition:name="about" href="/about" class="item">
+  <article class="w-full h-full flex flex-col">
+    <section class="flex justify-between grow">
+      <hgroup>
+        <h1 class="text-9xl font-black transition-colors">Web</h1>
+        <h2 class="text-7xl -mt-4">Developer</h2>
+      </hgroup>
+      <picture class="">
+        <Image
+          class="profile rounded-full"
+          src={Profile}
+          alt="profile photo"
+          width={150}
+          height={150}
+        />
+      </picture>
+    </section>
+    <div>
+      <li>Frontend & Backend</li>
+      <li>(19.56/20.00) Ingeniería en Computación</li>
+      <h4 class="font-semibold text-end">José Miguel Gómez</h4>
+    </div>
+  </article>
+</a>
+<style></style>
