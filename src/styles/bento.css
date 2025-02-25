@@ -1,0 +1,127 @@
+.bento {
+    width: 100%;
+    max-width: 1000px;
+    height: 600px;
+    display: grid;
+    gap: 1.5vw;
+    padding: 1vw;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+        "personal personal personal personal quote quote"
+        "personal personal personal personal quote quote"
+        "personal personal personal personal quote quote"
+        "experience experience blog blog quote quote"
+        "experience experience blog blog social social"
+        "experience experience blog blog social social";
+}
+
+
+.item {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    border: 2px solid #464545;
+    background-color: #000;
+    color: #fff;
+    position: relative;
+    transition: all 0.2s ease;
+    overflow: hidden;
+    text-decoration: none;
+
+    h1,
+    h2,
+    img,
+    li {
+        transition: all .3s;
+    }
+}
+
+.item:hover {
+
+    h1,
+    h2,
+    li,
+    img {
+        transform: translate(-4px, -4px);
+        transform: translate(-4px, -4px);
+
+    }
+}
+
+.bento .item:nth-child(1) {
+    grid-area: personal;
+    box-shadow: 10px 10px 0 var(--red);
+
+    h1,
+    h2 {
+        text-shadow: 4px 4px var(--red);
+    }
+}
+
+.bento .item:nth-child(1):hover {
+    box-shadow: 12px 12px 0 var(--red);
+}
+
+.bento .item:nth-child(2) {
+    grid-area: quote;
+    box-shadow: 10px 10px 0 var(--yellow-200);
+
+    h1 {
+        text-shadow: 3px 3px var(--yellow-800);
+    }
+}
+
+.bento .item:nth-child(3) {
+    grid-area: experience;
+    box-shadow: 10px 10px 0 var(--green);
+
+    h1 {
+        font-weight: 600;
+        text-shadow: 1px 1px var(--green);
+    }
+}
+
+.bento .item:nth-child(4) {
+    grid-area: blog;
+    box-shadow: 10px 10px 0 var(--light-blue);
+
+    h1 {
+        font-weight: 600;
+        text-shadow: 1px 1px var(--light-blue);
+    }
+}
+
+.bento .item:nth-child(5) {
+    grid-area: social;
+    box-shadow: 10px 10px 0 var(--orange);
+
+    h1 {
+        font-weight: 600;
+        text-shadow: 1px 1px var(--orange);
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .bento {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+            "personal   personal   personal   personal"
+            "personal   personal   personal   personal"
+            "quote quote quote experience"
+            "blog blog social social";
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .bento {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+            "personal   personal   personal"
+            "personal   personal   personal"
+            "quote quote quote"
+            "experience experience experience"
+            "blog blog blog"
+            "social social social";
+    }
+}
