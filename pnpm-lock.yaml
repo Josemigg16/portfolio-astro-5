@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@fontsource/rubik':
+    specifier: ^5.1.1
+    version: 5.1.1
   '@tailwindcss/vite':
     specifier: ^4.0.8
     version: 4.0.8(vite@6.1.1)
@@ -332,6 +335,10 @@ packages:
     requiresBuild: true
     dev: false
     optional: true
+
+  /@fontsource/rubik@5.1.1:
+    resolution: {integrity: sha512-g5H+vzDxwTxUBtEpPoNNF3uVZkqIvrXnYn0S8aQZNz1r2LMfpT0o/pnWr43hVumapVpm0CsT4xvH2Mw9LHnGqQ==}
+    dev: false
 
   /@img/sharp-darwin-arm64@0.33.5:
     resolution: {integrity: sha512-UT4p+iz/2H4twwAoLCqfA9UH5pI6DggwKEGuaPy7nCVQ8ZsiY5PIcrRvD1DzuY3qYL07NtIQcWnBSY/heikIFQ==}
