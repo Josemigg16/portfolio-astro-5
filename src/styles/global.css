@@ -1,1 +1,20 @@
 @import "tailwindcss";
+
+:root {
+    --red: hsl(0, 83%, 59%);
+    --yellow-200: hsl(55, 100%, 66%);
+    --yellow-800: hsl(55, 100%, 21%);
+    --green: hsl(114, 87%, 44%);
+    --light-blue: hsl(194, 84%, 57%);
+    --orange: hsl(22, 97%, 42%);
+}
+
+body {
+    font-family: 'Rubik', 'sans-serif';
+}
+
+
+
+@theme {
+    --color-mainred-500: var(--red)
+}
