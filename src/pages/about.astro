@@ -1,0 +1,62 @@
+---
+import Layout from "@/layouts/Layout.astro"
+---
+
+<Layout>
+  <main class="flex justify-center items-center min-h-screen py-10">
+    <article
+      transition:name="about"
+      class="item w-[1000px] max-w-[90vw] min-h-[600px]"
+    >
+      <h1
+        style={{ textShadow: "2.5px 2.5px var(--red)" }}
+        class="sm:text-5xl text-3xl text-center font-semibold mb-6"
+      >
+        Web developer
+      </h1>
+      <h2 class="sm:text-2xl text-xl">
+        Soy <span class="font-semibold">José Miguel</span>
+      </h2>
+      <section class="space-y-2 sm:text-[18px] mt-4">
+        <div>
+          <li>
+            Estudiante de <span class="font-semibold"
+              >Ingeniería en Computación</span
+            > en la <span class="font-semibold">Universidad Fermín Toro</span>.
+          </li>
+          <div class="indent-6">
+            <li>Pico Académico: 19.56/20.00</li>
+            <li>Promedio Académico: 19.00/20.00</li>
+          </div>
+        </div>
+        <li>
+          Casi <span class="font-semibold">tres años</span> de experiencia en el
+          mundo de la programación y el desarrollo web.
+        </li>
+        <li>Manejo en las nuevas tecnologías y en las más añejadas.</li>
+        <li>
+          <span class="font-semibold">Frontend</span>: Next.js, Nuxt, Astro,
+          Boostrap, HTML & CSS.
+        </li>
+        <li>
+          <span class="font-semibold">Backend</span>: Node, Nest.js, flask,
+          fastAPI, php.
+        </li>
+        <li>
+          <span class="font-semibold">Utilidades</span>: git, Docker, Bases de
+          Datos (SQL & NoSQL), GraphQL, TailwindCSS, Boostrap, librerías de UI.
+        </li>
+      </section>
+    </article>
+  </main>
+</Layout>
+<style>
+  .item {
+    border: 2px solid #464545;
+    border-radius: 5px;
+    box-shadow: 15px 15px 0 var(--red);
+    background: #000;
+    padding: 2rem;
+    display: block;
+  }
+</style>
