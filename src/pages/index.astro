@@ -1,11 +1,22 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Personal from "@/components/Bento/Personal.astro"
+import Layout from "../layouts/Layout.astro"
+import "@/styles/bento.css"
 ---
 
 <Layout>
-	<Welcome />
+  <main class="h-screen flex items-center">
+    <div class="bento mx-auto">
+      <Personal />
+      <a href="/" class="item">
+        <hgroup>
+          <h1 class="text-4xl font-bold">Freelancer</h1>
+          <h2 class="text-xl indent-2">Open to work</h2>
+        </hgroup>
+      </a>
+      <a href="/" class="item text-2xl"><h1>Experiencia</h1></a>
+      <a href="/" class="item text-2xl"><h1>Blog</h1></a>
+      <a href="/" class="item text-2xl"><h1>Social</h1></a>
+    </div>
+  </main>
 </Layout>
